@@ -1,0 +1,62 @@
+<div class="container">
+    <h1>Hotel Room Reservation System</h1>
+
+    <div class="section">
+        <h2>Overview</h2>
+        <p>Our Hotel Room Reservation System allows guests to book rooms efficiently while optimizing travel time between rooms. The system dynamically assigns rooms based on availability and minimizes guest movement within the hotel.</p>
+    </div>
+
+    <div class="section">
+        <h2>Hotel Structure</h2>
+        <ul>
+            <li><strong>Total Rooms:</strong> 97 rooms across 10 floors.</li>
+            <li><strong>Floors 1-9:</strong> Each floor has 10 rooms (e.g., Floor 1: 101-110, Floor 2: 201-210).</li>
+            <li><strong>Floor 10:</strong> The top floor has 7 rooms (1001-1007).</li>
+            <li><strong>Access:</strong> Each floor is accessible via a staircase and a lift located on the left side of the building.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Room Proximity & Travel Time</h2>
+        <ul>
+            <li><strong>Horizontal Travel:</strong> 1 minute per room when moving between adjacent rooms on the same floor.</li>
+            <li><strong>Vertical Travel:</strong> 2 minutes per floor using stairs or the lift.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Booking Rules</h2>
+        <ol>
+            <li>A guest can book up to <span class="highlight">5 rooms</span> at a time.</li>
+            <li><span class="highlight">Priority:</span> The system books rooms on the same floor first if available.</li>
+            <li>If the required rooms aren't available on one floor, the system minimizes travel time by choosing rooms across floors.</li>
+            <li>When spanning floors, the system prioritizes the lowest combined vertical and horizontal travel time.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Example Scenario</h2>
+        <p><strong>Available Rooms:</strong></p>
+        <ul>
+            <li>Floor 1: 101, 102, 105, 106</li>
+            <li>Floor 2: 201, 202, 203, 210</li>
+            <li>Floor 3: 301, 302</li>
+        </ul>
+
+        <p><strong>Case 1:</strong> If a guest wants to book 4 rooms:</p>
+        <p>The system selects <span class="highlight">101, 102, 105, and 106</span> on Floor 1 because it minimizes the travel time.</p>
+
+        <p><strong>Case 2:</strong> If only 2 rooms are available on Floor 1:</p>
+        <p>The system selects <span class="highlight">101, 102</span> from Floor 1 and <span class="highlight">201, 202</span> from Floor 2 to minimize vertical and horizontal travel time.</p>
+    </div>
+
+    <div class="section">
+        <h2>How to Use the System</h2>
+        <ol>
+            <li><strong>Select Room Quantity:</strong> Choose up to 5 rooms for booking.</li>
+            <li><strong>Check Availability:</strong> The system automatically checks room availability across all floors.</li>
+            <li><strong>Optimized Booking:</strong> Rooms are assigned to minimize travel time within the hotel.</li>
+            <li><strong>Confirmation:</strong> Receive a booking confirmation with room details and location.</li>
+        </ol>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div class="col-12 m-4">
+        <app-controls (bookRooms)="bookRooms($event)" (generateRandom)="generateRandom()" (reset)="reset()">
+        </app-controls>
+    </div>
+
+
+    <div class="col-12">
+        @for (floor of floors; track $index) {
+        <app-floor [floor]="floor" [rooms]="getRoomsForFloor(floor)"></app-floor>
+        }
+    </div>
+</div>
+
+<app-confirmation [bookedRooms]="bookedRooms"></app-confirmation>

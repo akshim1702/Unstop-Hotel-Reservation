@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+.container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin-right: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.floor {
+    margin-bottom: 30px;
+}
+
+.rooms {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.room {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0ffe0;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.room.booked {
+    background-color: #ffd0d0;
+    cursor: not-allowed;
+}

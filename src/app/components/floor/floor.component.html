@@ -1,0 +1,8 @@
+<div class="container">
+    <h3>Floor {{ floor }}</h3>
+    <div class="rooms">
+        @for (room of rooms; track $index) {
+        <app-room [room]="room"></app-room>
+        }
+    </div>
+</div>
